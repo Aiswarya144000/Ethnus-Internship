@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <style>
+    .profile{
+    background-image: url(Default-Profile.jpg);
+    background-size: cover;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+.box{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.inputs{
+    width: 30rem;
+    height: 2rem;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+}
+.box-1{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.login{
+    width: 30.5rem;
+    margin-top: 1rem;
+    height: 2rem;
+    background-color: green;
+    border: none;
+    color: white;
+    margin-bottom: 1rem;
+}
+.last{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(219, 212, 212);
+    height: 2rem;
+    align-items: center;
+}
+.cancel{
+    background-color: red;
+    height: 2rem;
+    color: white;
+    border: none;
+    border-radius: 20%;
+}
+
+  </style>
+  <body>
+    <div class="box"><div class="profile"></div></div>
+    <div class="box-1">
+      <div class="box-2">
+        <p>Username</p>
+        <input class="inputs" type="text" placeholder="Enter Username" />
+        <p>Password</p>
+        <input
+          class="inputs"
+          type="password"
+          placeholder="Enter Password"
+        /><br />
+        <button class="login">Login</button><br />
+        <input class="check" type="checkbox" />Remember me
+        <div class="last">
+          <button class="cancel">Cancel</button>
+          <a href="#">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

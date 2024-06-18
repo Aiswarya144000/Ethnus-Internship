@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        margin-top: 6rem;
+    }
+    table,tr,th,td{
+        border: 1px solid black;
+        border-radius: 1rem;
+        background-color: #9BD7D5 ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    th,td{
+        width: 20rem;
+    }
+    .bigbox{
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+    .boxes{
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        column-gap: 2rem;
+        flex-wrap: wrap;
+        height: 20rem;
+        width: 30rem;
+    
+    }
+    #box{
+        height: 3.8rem;
+        width: 6.5rem;
+        border: 3px solid #A5C959;
+    }
+    .box1{
+        border-radius: 0.4rem;
+    }
+    .box2{
+        border-radius: 0.5rem;
+    }
+    .box3{
+        border-radius: 0.9rem;
+    }
+    .box4{
+        border-radius: 0.6rem;
+    }
+    .box5{
+        border-radius: 0.1rem;
+    }
+    .box6{
+        border-radius: 0.8rem;
+    }
+    .box7{
+        border-radius: 50%;
+        /* border-top: 1rem; */
+    }
+    .box8{
+        border-radius: 0.2rem;
+    }
+    .box9{
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    </style>
+
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th class="thead">Firstname</th>
+        <th class="thead">Lastname</th>
+        <th class="thead">Age</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="bigbox">
+    <div class="boxes">
+        <div class="box1" id="box"></div>
+        <div class="box2" id="box"></div>
+        <div class="box3" id="box"></div>
+        <div class="box4" id="box"></div>
+        <div class="box5" id="box"></div>
+        <div class="box6" id="box"></div>
+        <div class="box7" id="box"></div>
+        <div class="box8" id="box"></div>
+        <div class="box9" id="box"></div>
+    </div>
+</div>
+  </body>
+</html>

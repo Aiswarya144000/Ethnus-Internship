@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myImage{
+             animation: start 8s infinite   ;
+             position: relative;
+        }
+        @keyframes start {
+            from{
+               left: 0;
+            }
+            to{
+                left: 1000px;
+            }
+            
+        }
+        
+       
+       
+    </style>
+</head>
+<body>
+    <h2 style=" margin-left: 300px;" >Click the following buttons to control the animations</h2>
+    <button  style=" margin-left: 300px;" onclick=" startani()">Start</button>
+<button  style=" margin-left: 300px;" onclick="stopani()">Stop</button>
+<br/>
+<img id="myImage" src="https://static.vecteezy.com/system/resources/previews/006/458/079/original/steam-locomotive-cartoon-clipart-illustration-free-vector.jpg" style="width:400px">
+
+    <script>
+         function startani() {
+            document.getElementById('myImage').style.animationPlayState='running';
+               
+         }
+         function stopani() {
+            document.getElementById('myImage').style.animationPlayState='paused';
+
+               
+         }
+        
+
+         document.getElementById('myImage').style.animationPlayState = 'running';
+
+
+    </script>
+</body>
+</html>
+
+
